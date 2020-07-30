@@ -1,0 +1,95 @@
+body {
+    font-family: "Microsoft JhengHei", serif;
+    background-color: #37474F;
+}
+
+#title {
+    color: #FFFFFF;
+}
+
+#agencies {
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #37474F;
+}
+
+#states {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#years {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* Tooltip CSS */
+
+.tooltip {
+    top: 100px;
+    left: 100px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: #333;
+    opacity: 0.9;
+    color: white;
+    padding: 2px;
+    min-width: 375px;
+    min-width: 36.75vmin;
+    font-size: 2.25vmin;
+    line-height: 24pt;
+    font-weight: lighter;
+    visibility: visible;
+}
+
+.tooltip.bottom::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0.9;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid #333;
+    border-left: 8px solid transparent;
+    bottom: 35px;
+    /* arbitrarily set */
+}
+
+.tooltip.left::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0.9;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid #333;
+    border-right: 8px solid transparent;
+    bottom: 35px;
+    /* arbitrarily set */
+}
+
+/* Sankey CSS */
+
+.node rect {
+    /*cursor: pointer;*/
+    fill-opacity: 1.0;
+    shape-rendering: crispEdges;
+}
+
+.node text {
+    pointer-events: none;
+    /*text-shadow: 0 1px 0 #fff;*/
+}
+
+.link {
+    fill: none;
+    stroke: #000000;
+    stroke-opacity: 0.2;
+}
+
+.link:hover {
+    stroke-opacity: 0.7;
+}
